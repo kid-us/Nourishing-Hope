@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap  CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Css style -->
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="website icon" href="img/icon.png">
+    <title>Login | </title>
+</head>
+
+<body>
+    <div class="container fw-semibold small">
+        <div class="form-container">
+            <div class="row justify-content-center shadow rounded mt-sm-0 mt-md-5 mt-lg-5 px-5 bg">
+
+                <!-- Alert Message -->
+                <!-- Error Message -->
+                <div id="error-message" class="hidden">
+                    <p class="alert alert-danger text-center mt-5">Invalid Email and Password</p>
+                </div>
+
+                <div class="col-6 d-none d-md-block px-4 text-center">
+                    <img src="/img/donate2.png" alt="" width="350px" class="img">
+                    <p class=""><a href="register.html" class="text-primary border-bottom">Create an account</a></p>
+                </div>
+
+                <div class="col-lg-6 col-md col-12 px-sm-0 px-md-5 px-lg-5 small">
+                    <p class="my-5 display-6 fw-semibold text-end"> Sign In </>
+
+                        <!-- Form Container -->
+                    <form action="#">
+                        <label for=" email" class="mt-2">Email</label>
+                        <div class="input-group mt-2 mb-3">
+                            <span class="bi bi-envelope-fill input-group-text"></span>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+
+                        <label for="password" class="my-2">Password</label>
+                        <div class="input-group">
+                            <span class="bi bi-lock-fill input-group-text"></span>
+                            <input type="password" name="password" id="password" class="form-control">
+
+                            <span id="password-eye" class="bi bi-eye-slash-fill input-group-text cursor"></span>
+                        </div>
+                        <p class="text-end small mt-3"> <a href="#" class="text-primary">Forgot Password?</a></p>
+
+                        <button class="btn-signIn px-5 mt-2 w-100" id="sign_in">Sign In
+                            <span class="ms-5 bi-caret-right-fill"></span>
+                        </button>
+
+                        <div class="d-block d-md-none">
+                            <p class="mt-5 text-end"><a href="register.html" class="text-primary border-bottom">Create
+                                    an
+                                    account</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Password View Script -->
+        <script src="/js/password.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./integration/login.js"></script>
+</body>
+
+</html>
