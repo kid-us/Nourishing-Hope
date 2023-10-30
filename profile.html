@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="website icon" href="img/icon.png" />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Large Device Navbar -->
+      <nav
+        class="d-none d-md-block border-bottom navbar navbar-expand-md navbar-expand-lg small fw-semibold fixed-top"
+      >
+        <div class="py-2 container">
+          <a class="navbar-brand" href="/dashboard.html">
+            <img src="/img/logo.png" alt="logo" width="180px" />
+          </a>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/dashboard.html">Home</a>
+              </li>
+
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link me-5">Contact Us</a>
+              </li>
+
+              <li class="mt-1 ms-2">
+                <p id="account-name" class="nav-link cursor px-4 active">
+                  Jon Doe
+                  <span class="bi bi-caret-down-fill"></span>
+                </p>
+              </li>
+            </ul>
+
+            <!-- Large device profile modal -->
+            <div class="d-none d-md-block">
+              <div id="account-info-modal" class="hidden rounded">
+                <p>
+                  <a href="/dashboard.html" class="bi bi-heart-fill"> Donate</a>
+                </p>
+                <p>
+                  <a
+                    href="/profile.html"
+                    class="bi bi-person-fill text-warning"
+                  >
+                    Profile</a
+                  >
+                </p>
+                <p>
+                  <a href="/history.html" class="bi bi-clock-history">
+                    History</a
+                  >
+                </p>
+                <p>
+                  <a href="#" class="bi bi-power" id="logout"> Logout</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Small Device Navbar -->
+      <nav
+        class="d-block d-md-none fixed-top border-bottom sm-navbar fw-semibold"
+      >
+        <div class="container py-4">
+          <a class="navbar-brand" href="/dashboard.html">
+            <img src="/img/logo.png" alt="logo" width="180px" />
+          </a>
+          <a
+            id="menu-btn"
+            href="#"
+            class="text-dark bi-menu-button-wide fs-3 float-end"
+          ></a>
+          <!-- Menus -->
+          <div
+            id="menu-page"
+            class="mt-5 menu animate__animated animate__bounceInLeft hidden"
+          >
+            <ul class="pe-5">
+              <li class="nav-item mt-5">
+                <a
+                  class="nav-link active bi bi-house-fill"
+                  aria-current="page"
+                  href="#"
+                >
+                  &nbsp; Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link bi bi-info-lg" href="/about.html">
+                  &nbsp; About</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link bi bi-telephone-fill">
+                  &nbsp; Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/profile.html"
+                  class="nav-link bi bi-box-arrow-in-right"
+                >
+                  &nbsp; Jon Doe</a
+                >
+              </li>
+              <ul>
+                <p>
+                  <a href="/dashboard.html" class="bi bi-heart-fill"> Donate</a>
+                </p>
+                <p>
+                  <a
+                    href="/profile.html"
+                    class="bi bi-person-fill text-warning"
+                  >
+                    Profile</a
+                  >
+                </p>
+                <p>
+                  <a href="/history.html" class="bi bi-clock-history">
+                    History</a
+                  >
+                </p>
+                <p><a href="#" class="bi bi-power" id="logout"> Logout</a></p>
+              </ul>
+              <p class="small py-4 text-center">Navbar</p>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Profile Form -->
+    <div class="container mt-5">
+      <h1 class="text-light">p</h1>
+      <div class="row m-4 pt-5">
+        <div class="col-lg-4 col-12 text-center">
+          <div class="shadow rounded p-3 bg small mb-5">
+            <p class="fs-1 bi bi-person-fill"></p>
+            <p class="fw-semibold" id="sub-username">Jon Doe</p>
+            <li class="text-secondary">Donor</li>
+            <div class="mt-2 text-center">
+              <i class="bi bi-envelope-check-fill success" id="sub-email"></i>
+              <p class="bi bi-flag-fill">Ethiopia</p>
+              <p class="bi bi-building">Addis Abeba</p>
+              <p class="bi bi-telephone-fill">+25198765432</p>
+            </div>
+          </div>
+
+          <!-- Password form -->
+          <div
+            id="password-container"
+            class="hidden my-5 shadow p-3 rounded bg"
+          >
+            <h6 class="p-2">Change Your Password</h6>
+
+            <form action="#">
+              <div class="form-floating small mb-4">
+                <input
+                  type="password"
+                  name="current-password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Current Password</label>
+              </div>
+
+              <div class="form-floating small mb-4">
+                <input
+                  type="password"
+                  name="new-password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                />
+                <label for="floatingConfirmPassword">New Password</label>
+              </div>
+              <button name="change" class="btn-donate w-100">Change</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Profile Form -->
+        <div class="col-lg-7 col-12 shadow mx-3 bg p-5 mb-5 rounded">
+          <h4>Activity</h4>
+          <p class="small mb-5 mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi
+            delectus, minus pariatur iure quos aliquid provident suscipit iste?
+            Incidunt.
+          </p>
+
+          <h5 class="mb-4">Setting</h5>
+          <p class="small fw-semibold mb-5">
+            Make change on your profile
+            <span>
+              <a href="#" id="show-password" class="ms-5 text-primary"
+                >Also change Password?</a
+              >
+            </span>
+          </p>
+
+          <form action="#">
+            <div class="row small">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    class="form-control"
+                    placeholder="Country"
+                  />
+                  <label for="country">Country</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="form-control"
+                    placeholder="City"
+                  />
+                  <label for="date">City</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <button class="btn-donate w-100 mt-3 pb-2 mb-4">Update</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-3 mt-5">
+      <div class="container text-light">
+        <div class="row pt-4">
+          <div class="col-lg-4 col-md-4 col-12 pt-md-5 pt-lg-5 text-center">
+            <h1>
+              <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" alt="logo" width="250px" />
+              </a>
+            </h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <form action="#">
+              <label for="subscribe" class="text-start">Subscribe</label>
+              <input
+                type="text"
+                class="form-control mt-3"
+                name="subscribe"
+                id="subscribe"
+              />
+              <button class="btn-donate px-4 py-1 small mt-2 w-50">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pt-5">
+            <div class="social-media text-center fs-5 mt-3">
+              <a
+                href="https://twitter.com/chapimenge3"
+                class="bi bi-twitter"
+              ></a>
+              <a
+                href="https://www.instagram.com/chapimenge3/"
+                class="mx-3 bi bi-instagram"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-youtube"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-facebook ms-3"
+              ></a>
+            </div>
+          </div>
+          <p class="small mt-4 text-center text-secondary">
+            &copy; 2023 Allright reserved Navbar
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./integration/profile.js"></script>
+  </body>
+</html>
