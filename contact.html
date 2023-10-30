@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Bootstrap  CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="website icon" href="img/icon.png" />
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- Large Device Navbar -->
+      <nav
+        class="d-none d-md-block border-bottom navbar navbar-expand-md navbar-expand-lg small fw-semibold fixed-top"
+      >
+        <div class="py-2 container">
+          <a class="navbar-brand" href="/dashboard.html">
+            <img src="/img/logo.png" alt="" width="180px" />
+          </a>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/dashboard.html">Home</a>
+              </li>
+
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+
+              <!-- <li class="mt-1 ms-2">
+                <a href="/login.html" class="account-link px-4 py-2"
+                  >Register / Login</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Small Device Navbar -->
+      <nav
+        class="d-block d-md-none fixed-top border-bottom sm-navbar fw-semibold"
+      >
+        <div class="container py-4">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo.png" alt="" width="180px" />
+          </a>
+          <a
+            id="menu-btn"
+            href="#"
+            class="text-dark bi-menu-button-wide fs-3 float-end"
+          ></a>
+          <!-- Menus -->
+          <div
+            id="menu-page"
+            class="mt-5 menu animate__animated animate__bounceInLeft hidden"
+          >
+            <ul class="pe-5">
+              <li class="nav-item mt-5">
+                <a
+                  class="nav-link active bi bi-house-fill"
+                  aria-current="page"
+                  href="/index.html"
+                >
+                  &nbsp; Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link bi bi-info-lg" href="#"> &nbsp; About</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link bi bi-telephone-fill">
+                  &nbsp; Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/login.html" class="nav-link bi bi-box-arrow-in-right">
+                  &nbsp; Login</a
+                >
+              </li>
+              <p class="small py-4 text-center">Navbar</p>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Location Map -->
+    <div class="container">
+      <iframe
+        src="
+        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126115.0586498362!2d38.70810470577968!3d8.963339832233135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1666476170542!5m2!1sen!2set"
+        style="height: 50vh; width: 100%; margin-top: 110px"
+        class="shadow"
+      >
+      </iframe>
+    </div>
+
+    <section class="container mt-5">
+      <div class="row justify-content-center">
+        <!-- Small device hero title -->
+        <div class="d-block d-md-none col-12 px-5">
+          <div class="row justify-content-center mt-5">
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-5">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-geo-alt-fill">&nbsp; </span> Office
+              </p>
+              <p class="fw-semibold fs-6">Visit: Addis Abeba</p>
+            </div>
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-4">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-phone-fill">&nbsp; </span> Phone
+              </p>
+              <p class="fw-semibold fs-6">Call: +25198765432</p>
+            </div>
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-4">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-envelope-fill">&nbsp; </span> Email
+              </p>
+              <p class="fw-semibold fs-6">Email Us: fooddonate@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-6 col-md-8 col-12 pt-5 px-2 ms-lg-5 ms-lg-0">
+          <form action="#" class="shadow-lg p-5">
+            <h3>Get In Touch With Us</h3>
+            <p class="small mb-5 mt-4">
+              We find solutions to hunger that transform and last. Our answer is
+              to build power with grassroots initiatives that nourish people and
+              enrich communities.
+            </p>
+
+            <div class="row small">
+              <div class="col-lg-6 col-md-4 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Donor name"
+                  />
+                  <label for="name">Your Name</label>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-8 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-5 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-4 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    class="form-control"
+                    placeholder="Date"
+                  />
+                  <label for="date">Subject</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating mb-3">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control"
+                    style="resize: none; height: 120px"
+                    placeholder="Message"
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button class="btn-donate w-100 mt-3">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact info on large devices -->
+        <div class="d-none d-md-block col-lg-4 col-md-4 col-12 ps-lg-5 mt-5">
+          <!-- <p class="mt-5 pt-5 display-5 fw-semibold">Do you want to help the people that can't have Food?</> -->
+          <div class="row justify-content-center">
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-5">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-geo-alt-fill">&nbsp; </span> Office
+              </p>
+              <p class="fw-semibold fs-6">Visit: Addis Abeba</p>
+            </div>
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-4">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-phone-fill">&nbsp; </span> Phone
+              </p>
+              <p class="fw-semibold fs-6">Call: +25198765432</p>
+            </div>
+            <div class="col-12 bg-secondary px-4 pt-4 rounded text-light mt-4">
+              <p class="fs-3 fw-semibold">
+                <span class="bi bi-envelope-fill">&nbsp; </span> Email
+              </p>
+              <p class="fw-semibold fs-6">Email Us: fooddonate@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-3 mt-5">
+      <div class="container text-light">
+        <div class="row pt-4">
+          <div class="col-lg-4 col-md-4 col-12 pt-md-5 pt-lg-5 text-center">
+            <h1>
+              <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" alt="" width="250px" />
+              </a>
+            </h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <form action="#">
+              <label for="subscribe" class="text-start">Subscribe</label>
+              <input
+                type="text"
+                class="form-control mt-3"
+                name="subscribe"
+                id="subscribe"
+              />
+              <button class="btn-donate px-4 py-1 small mt-2 w-50">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pt-5">
+            <div class="social-media text-center fs-5 mt-3">
+              <a
+                href="https://twitter.com/chapimenge3"
+                class="bi bi-twitter"
+              ></a>
+              <a
+                href="https://www.instagram.com/chapimenge3/"
+                class="mx-3 bi bi-instagram"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-youtube"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-facebook ms-3"
+              ></a>
+            </div>
+          </div>
+          <p class="small mt-4 text-center text-secondary">
+            &copy; 2023 Allright reserved Nourishing Hope
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
