@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="website icon" href="img/icon.png" />
+    <title>Donate</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Large Device Navbar -->
+      <nav
+        class="d-none d-md-block border-bottom navbar navbar-expand-md navbar-expand-lg small fw-semibold fixed-top"
+      >
+        <div class="py-2 container">
+          <a class="navbar-brand" href="/dashboard.html">
+            <img src="/img/logo.png" alt="logo" width="180px" />
+          </a>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/dashboard.html">Home</a>
+              </li>
+
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link me-5">Contact Us</a>
+              </li>
+
+              <li class="mt-1 ms-2">
+                <p id="account-name" class="nav-link cursor px-4 active">
+                  Jon Doe
+                  <span class="bi bi-caret-down-fill"></span>
+                </p>
+              </li>
+            </ul>
+
+            <!-- Large device profile modal -->
+            <div class="d-none d-md-block">
+              <div id="account-info-modal" class="hidden rounded">
+                <p>
+                  <a
+                    href="/dashboard.html"
+                    class="bi bi-heart-fill text-warning"
+                  >
+                    Donate</a
+                  >
+                </p>
+                <p>
+                  <a href="/profile.html" class="bi bi-person-fill"> Profile</a>
+                </p>
+                <p>
+                  <a href="/history.html" class="bi bi-clock-history">
+                    History</a
+                  >
+                </p>
+                <p><a href="#" id="logout" class="bi bi-power"> Logout</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Small Device Navbar -->
+      <nav
+        class="d-block d-md-none fixed-top border-bottom sm-navbar fw-semibold"
+      >
+        <div class="container py-4">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo.png" alt="logo" width="180px" />
+          </a>
+          <a
+            id="menu-btn"
+            href="#"
+            class="text-dark bi-menu-button-wide fs-3 float-end"
+          ></a>
+          <!-- Menus -->
+          <div
+            id="menu-page"
+            class="mt-5 menu animate__animated animate__bounceInLeft hidden"
+          >
+            <ul class="pe-5">
+              <li class="nav-item mt-5">
+                <a
+                  class="nav-link active bi bi-house-fill"
+                  aria-current="page"
+                  href="#"
+                >
+                  &nbsp; Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link bi bi-info-lg" href="/about.html">
+                  &nbsp; About</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link bi bi-telephone-fill">
+                  &nbsp; Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/profile.html"
+                  class="nav-link bi bi-box-arrow-in-right"
+                >
+                  &nbsp; Jon Doe</a
+                >
+              </li>
+              <ul>
+                <p>
+                  <a
+                    href="/dashboard.html"
+                    class="bi bi-heart-fill text-warning"
+                  >
+                    Donate</a
+                  >
+                </p>
+                <p>
+                  <a href="/profile.html" class="bi bi-person-fill"> Profile</a>
+                </p>
+                <p>
+                  <a href="/history.html" class="bi bi-clock-history">
+                    History</a
+                  >
+                </p>
+                <p><a href="#" id="logout" class="bi bi-power"> Logout</a></p>
+              </ul>
+              <p class="small py-4 text-center">Navbar</p>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container body-bg">
+      <div class="row justify-content-center">
+        <!-- Small device hero title -->
+        <div class="d-block d-md-none col-12 mt-4 px-5">
+          <p class="display-6 fw-semibold">
+            Do you want to help the people that can't have Food?
+          </p>
+          <p class="fw-semibold display-6 mt-5">Then Donate Right Now</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mt-5 pt-5 px-2 ms-5 ms-lg-0">
+          <form action="#" class="shadow-lg p-5">
+            <h3>DONATE NOW!</h3>
+            <p class="small mb-5">
+              We find solutions to hunger that transform and last. Our answer is
+              to build power with grassroots initiatives that nourish people and
+              enrich communities.
+            </p>
+
+            <div class="row small">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    class="form-control"
+                    placeholder="Location"
+                  />
+                  <label for="location">Location</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="time"
+                    name="preparedTime"
+                    id="preparedTime"
+                    class="form-control"
+                    placeholder="Prepared Time"
+                  />
+                  <label for="preparedTime">Prepared Time</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <select class="form-select" name="time" id="time">
+                    <option value="1">Morning</option>
+                    <option value="2">Afternoon</option>
+                    <option value="3">Night</option>
+                  </select>
+                  <label for="time">Time to Pick Up</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button class="btn-donate w-100 mt-3">Donate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="d-none d-md-block col-lg-6 col-md-6 col-12 ps-lg-5 mt-5 pt-5"
+        >
+          <p class="mt-5 pt-5 display-5 fw-semibold">
+            Do you want to help the people that can't have Food?
+          </p>
+          <p class="fw-semibold display-6 mt-5">Then Donate Right Now</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-3 mt-5">
+      <div class="container text-light">
+        <div class="row pt-4">
+          <div class="col-lg-4 col-md-4 col-12 pt-md-5 pt-lg-5 text-center">
+            <h1>
+              <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" alt="logo" width="250px" />
+              </a>
+            </h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <form action="#">
+              <label for="subscribe" class="text-start">Subscribe</label>
+              <input
+                type="text"
+                class="form-control mt-3"
+                name="subscribe"
+                id="subscribe"
+              />
+              <button class="btn-donate px-4 py-1 small mt-2 w-50">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 pt-5">
+            <div class="social-media text-center fs-5 mt-3">
+              <a
+                href="https://twitter.com/chapimenge3"
+                class="bi bi-twitter"
+              ></a>
+              <a
+                href="https://www.instagram.com/chapimenge3/"
+                class="mx-3 bi bi-instagram"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-youtube"
+              ></a>
+              <a
+                href="https://www.facebook.com/chapimenge"
+                class="bi bi-facebook ms-3"
+              ></a>
+            </div>
+          </div>
+          <p class="small mt-4 text-center text-secondary">
+            &copy; 2023 Allright reserved Nourishing Hope
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="./integration/dashboard.js"></script> -->
+  </body>
+</html>
