@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;400&family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Rajdhani&family=Ubuntu:wght@300&display=swap');
+
+/* ###################### Global styles  */
+:root {
+    --body-color: #F8F8F8;
+    --main-color: #fff;
+    --shadow: #DAA425;
+    --border: #110e49;
+    --btnBg: #40798C;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+p,
+a,
+li,
+span,
+input,
+label,
+textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8c8a8a;
+}
+
+nav {
+    background-color: #fff;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* body {
+    background-color: var(--body-color);
+} */
+
+/* Navbar Style*/
+/* Navbar Style*/
+.account-link {
+    border: 1px solid var(--shadow);
+    background-color: var(--btnBg);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px #110e49;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+.account-link:hover {
+    color: #fff;
+    transition: 1s;
+    box-shadow: none;
+}
+
+.sm-navbar {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 25px;
+    right: 6px;
+    background: #c8c8c8;
+    color: #000;
+    border-radius: 15px;
+    width: auto;
+}
+
+.menu ul li,
+.menu ul li a {
+    list-style: none;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+
+}
+
+.hero {
+    margin-top: 180px;
+    font-weight: bolder;
+}
+
+.hero-container {
+    background-image: url(../img/donate.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 550px;
+    height: 420px;
+    position: relative;
+    top: -60px
+}
+
+
+.hero-container a {
+    text-decoration: none;
+}
+
+.hero-container p {
+    padding-top: 170px;
+}
+
+.map-img {
+    background-image: url(../img/map2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+}
+
+/* border-radius */
+.border-radius {
+    /* border-radius: 10% 20% / 10% 10%; */
+    border-radius: 14px;
+}
+
+.border-radius:hover {
+    transition: 1s;
+    border-bottom: 3px solid var(--border);
+}
+
+/*  */
+.body-bg {
+    margin-top: 110px;
+}
+
+.img-content {
+    position: relative;
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+}
+
+.img-bg-shape1 {
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    left: -50px;
+    border-radius: 50%;
+    border: 4px solid var(--body-color);
+    object-fit: contain;
+}
+
+.img-bg-shape2 {
+    top: 340px;
+    left: 300px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--body-color);
+}
+
+.advert-img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    /* filter: grayscale(100%); */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    .advert-img {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+.goal-img {
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 0px 0px 23px #8c8a8a;
+    /* transform: rotate(-5deg); */
+}
+
+.form-floating input:focus {
+    background-color: transparent;
+    border-color: #86b7fe;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-floating {
+    border: 2px solid var(--btnBg);
+    border-radius: 5px;
+}
+
+.form-floating input,
+.form-floating textarea {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn-donate {
+    outline: none;
+    border: 1px solid var(--shadow);
+    background-color: var(--btnBg);
+    padding: 8px;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 3px 4px 5px #110e49;
+    font-size: medium;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-donate:hover {
+    transition: 1s;
+    color: #fff;
+    background-color: var(--btnBg);
+    box-shadow: 1px 2px 3px #110e49;
+}
+
+/* Contact Iframe style */
+div iframe {
+    margin-top: 1200px;
+}
+
+/* Dashboard modal style */
+#account-info-modal {
+    position: absolute;
+    right: 130px;
+    z-index: 5;
+    background-color: var(--btnBg);
+    width: 130px;
+    padding: 20px;
+    box-shadow: 4px 6px 8px #000;
+}
+
+/* HISTORY TABLE */
+.custom-table {
+    min-width: 900px;
+}
+
+.custom-table thead tr,
+.custom-table thead th {
+    padding-bottom: 30px;
+    border-top: none;
+    border-bottom: none !important;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.custom-table tbody th,
+.custom-table tbody td {
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 300;
+    border: none;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.custom-table tbody th small,
+.custom-table tbody td small {
+    color: #fff;
+    font-weight: 300;
+}
+
+.custom-table tbody th a,
+.custom-table tbody td a {
+    color: #fff;
+}
+
+.custom-table tbody th .more,
+.custom-table tbody td .more {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.custom-table tbody tr {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.custom-table tbody tr:hover td,
+.custom-table tbody tr:focus td {
+    color: #fff;
+}
+
+.custom-table tbody tr:hover td a,
+.custom-table tbody tr:focus td a {
+    color: #fdd114;
+}
+
+.custom-table tbody tr:hover td .more,
+.custom-table tbody tr:focus td .more {
+    color: #fdd114;
+}
+
+.custom-table .td-box-wrap {
+    padding: 0;
+}
+
+.custom-table .box {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.custom-table .box td,
+.custom-table .box th {
+    border: none !important;
+}
