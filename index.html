@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- AOS Style -->
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="website icon" href="img/icon.png">
+    <title>Nourishing Hope</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Large Device Navbar -->
+        <nav class="d-none d-md-block border-bottom navbar navbar-expand-md navbar-expand-lg small fw-semibold
+            fixed-top">
+            <div class="py-2 container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="" width="180px">
+                </a>
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link me-5">Contact Us</a>
+                        </li>
+
+                        <!-- After Login user username -->
+                        <li class="mt-1 ms-2">
+                            <a href="/dashboard.html" class="nav-link px-4 hidden">Jon Doe</a>
+                        </li>
+
+                        <li class="mt-1 ms-2">
+                            <a href="/login.html" class="account-link px-4 py-2">Register / Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Small Device Navbar -->
+        <nav class="d-block d-md-none fixed-top border-bottom sm-navbar fw-semibold">
+            <div class="container py-4">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="" width="180px">
+                </a>
+                <a id="menu-btn" href="#" class="text-dark bi-menu-button-wide fs-3 float-end"></a>
+                <!-- Menus -->
+                <div id="menu-page" class="mt-5 menu animate__animated animate__bounceInLeft hidden">
+                    <ul class="pe-5">
+                        <li class="nav-item mt-5">
+                            <a class="nav-link active bi bi-house-fill" aria-current="page" href="#"> &nbsp;
+                                Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-info-lg" href="#"> &nbsp; About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link bi bi-telephone-fill"> &nbsp; Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/login.html" class="nav-link bi bi-box-arrow-in-right"> &nbsp; Login</a>
+                        </li>
+                        <p class="small py-4 text-center">Navbar</>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section-->
+    <section class="hero container border-bottom" data-aos="fade-right" data-aos-easing="linear"
+        data-aos-duration="1000">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 ps-5">
+                <p class="display-6 fw-semibold">Empowering Homeless Lives through Food Donation!</p>
+                <p class="small">Our website, "Nourishing Hope" is dedicated to making a difference in the lives of
+                    homeless individuals by facilitating food donations and providing sustenance for those in need.</p>
+                <div class="mt-5">
+                    <p>
+                        <a href="/dashboard.html" class="btn-donate px-5">Donate Now</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="offset-lg-1 offset-md-1 col-lg-5 col-md-5 hero-container">
+            </div>
+        </div>
+    </section>
+
+    <!--Card -->
+    <section class="container mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="text-center pb-5">
+            <p class="small fw-semibold">Together we can make changes for peoples who needs our help</p>
+            <p class="display-6 fw-semibold">Help us with Difference</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-4 12 col-12 mt-4">
+                <div class="shadow border-radius p-5 mx-3  small">
+                    <img src="/img/info.png" alt="info" width="70px">
+                    <p class="fs-5 fw-semibold mt-5 mb-3">Ending Hunger, One meal at a Time.</p>
+                    <p class="fw-semibold mb-4">Join us in our mission to combact hunger and make a lasting impact on
+                        the lives of homeless individuals by donating food and help us provide nourishment and hope for
+                        a better tomorrow.</p>
+                    <a href="#" class="account-link px-5 py-2">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 12 col-12 mt-4">
+                <div class="shadow border-radius p-5 mx-3 small">
+                    <img src="/img/charity.png" alt="info" width="70px">
+                    <p class="fs-5 fw-semibold mt-5 mb-3">Feeding Dreams, Changing Lives</p>
+                    <p class="fw-semibold mb-4">Discover the power of food donation as we work tirelessly to feed the
+                        dreams and aspirations of homeless individuals, providing them with the sustenance the need to
+                        thrive and create a brighter future.</p>
+                    <a href="#" class="account-link px-5 py-2 ">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 12 col-12 mt-4">
+                <div class="shadow border-radius p-5 mx-3 small">
+                    <img src="/img/help.png" alt="info" width="70px">
+                    <p class="fs-5 fw-semibold mt-5 mb-3">Food for all, Empowering Homeless Communities</p>
+                    <p class="fw-semibold mb-4">Be part of a movement that aims to empower homeless communities through
+                        the food donation, ensuring that no one goes hungry and everyone has access to nutritious meals,
+                        fostering dignity, and hope.</p>
+                    <a href="#" class="account-link px-5 py-2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advert -->
+    <section class="body-bg" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-content mt-4">
+                        <img src="/img/homeless1.jpg" alt="kid" class="advert-img">
+
+                        <div class="img-bg">
+                            <img class="img-bg img-bg-shape1" src="/img/salad.png" alt="kids"></span>
+                            <img class="img-bg img-bg-shape2 d-none d-lg-block" src="/img/diet.png" alt="kids"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="mt-5 fw-semibold">
+                        <p class="display-6 fw-semibold"> Feed The Poor Peoples who needs your Help!</p>
+                        <p class="mt-5">According to the World Food Programme, 828 million people did not
+                            have enough to eat in 2020.
+                            This number has been increasing in recent years, and it is estimated that it will reach 924
+                            million by 2030. <span class="text-primary">So help those peoples let reduce this number
+                                together!</span> </p>
+                        <p class="mt-5">
+                            <a href="/dashboard.html" class="btn-donate px-5">Donate Now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and goals -->
+    <section class="container my-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="row justify-content-center pt-5">
+            <p class="display-6 fw-semibold text-center">Building Bridges of Compassion: Our Mission and Goal</p>
+            <div class="col-lg-5 col-md-7 col-12 mt-5 pt-5 ps-5">
+                <p class="fs-6 fw-semibold mt-3 w-75">Our mission is to create positive change by addressing the
+                    pressing issue of homelessness and hunger. We strive to build bridges of compassion, connecting
+                    generous individuals and organizations with those in need. Our goal is to provide a sustainable
+                    solution by facilitating food donations and supporting initiatives that empower homeless individuals
+                    to regain stability and independence. Together, we can make a significant impact in the lives of
+                    those experiencing homelessness, fostering a community where everyone has access to nutritious meals
+                    and opportunities for a brighter future. Join us in our mission and help us build a world filled
+                    with compassion, dignity, and hope.</p>
+
+                <p class="fs-6 fw-semibold mt-5 w-75">
+                    Our commitment to making a difference extends far and wide, as we strive to reach every corner of
+                    Ethiopia. From the bustling cities to the remote highlands and beyond, we are dedicated to combating
+                    homelessness and hunger across the entire country.</>
+            </div>
+            <div class="col-lg-6 col-md-5 col-12 mt-5 pt-5">
+                <img src="/img/homeless.jpg" alt="" class="img-fluid goal-img mt-5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="container mt-5 border-top" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12 pt-5 mt-5 ps-5 ms-lg-5">
+                <p class="fw-semibold display-6 w-75">
+                    WE REACH EVERY CORNER OF THE COUNTRY
+                    </h4>
+                <p class="fw-semibold small w-75 mb-5">A recent report from a well-known food charity has shown that the
+                    organization is
+                    making a
+                    significant impact
+                    in every state across the country. The charity, which is operates a network of food banks and
+                    pantries, has
+                    reported distributing millions of pounds of food to those in need over the past year.</p>
+                <a href="login.html" class="btn-donate px-5">Sign In</a>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 map-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan -->
+    <div class="container my-5">
+        <p class="fs-3 fw-semibold text-center py-5">
+            Hunger is a problem but, we can solve it together. Donate food today!
+        </p>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark py-3 mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="container text-light">
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-4 col-12 pt-md-5 pt-lg-5 text-center">
+                    <h1>
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="/img/logo.png" alt="" width="250px">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <form action="#">
+                        <label for="subscribe" class="text-start">Subscribe</label>
+                        <input type="text" class="form-control mt-3" name="subscribe" id="subscribe">
+                        <button class="btn-donate px-4 py-1 small mt-2 w-50">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 pt-5">
+                    <div class="social-media text-center fs-5 mt-3">
+                        <a href="https://twitter.com/chapimenge3" class="bi bi-twitter"></a>
+                        <a href="https://www.instagram.com/chapimenge3/" class="mx-3 bi bi-instagram"></a>
+                        <a href="https://www.facebook.com/chapimenge" class="bi bi-youtube"></a>
+                        <a href="https://www.facebook.com/chapimenge" class="bi bi-facebook ms-3"></a>
+                    </div>
+                </div>
+                <p class="small mt-4 text-center text-secondary">&copy; 2023 Allright reserved Nourishing Hope</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="/js/script.js"></script> -->
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
