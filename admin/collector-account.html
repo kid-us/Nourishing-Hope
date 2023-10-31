@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="website icon" href="../img/icon.png" />
+    <title>Create Collector</title>
+  </head>
+
+  <body>
+    <div class="row container-fluid">
+      <!-- Large device Sidebar -->
+      <div
+        class="col-lg-2 col-md-2 col-12 px-4 sidebar fw-semibold d-none d-lg-block"
+      >
+        <p class="fs-1 my-5">
+          <a href="/admin/index.html" class="text-light">
+            <img src="/img/logo.png" alt="logo" class="img-fluid" />
+          </a>
+        </p>
+
+        <p class="bi bi-person-fill ms-2 small">Jon Doe</p>
+
+        <div class="pt-2">
+          <p class="mb-4">
+            <a href="/admin/index.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-speedometer2 me-1"></span>
+              Dashboard</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="/admin/profile.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-person-fill me-1"></span>
+              Profile</a
+            >
+          </p>
+          <p class="mb-4"></p>
+
+          <p id="accounts-link" class="text-light cursor">
+            <span class="text-warning fs-5 bi bi-pencil-square me-1"></span>
+            Create Account &nbsp;
+            <span id="caret" class="bi bi-caret-down-fill small"> </span>
+          </p>
+
+          <!-- Account dropdown -->
+          <ul id="account-dropdown" class="hidden">
+            <li class="mb-3">
+              <a href="/admin/collector-account.html" class="text-light small"
+                >Collector</a
+              >
+            </li>
+            <li>
+              <a href="/admin/distributor-account.html" class="text-light small"
+                >Distributor</a
+              >
+            </li>
+          </ul>
+
+          <p class="mb-4">
+            <a href="/admin/manage.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-people me-1"></span> Manage
+              Accounts</a
+            >
+          </p>
+
+          <!-- <p class="mb-4">
+            <a href="/admin/assign-donation.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-check2-all me-1"></span>
+              Manage Donation
+            </a>
+          </p> -->
+          <p class="mb-4">
+            <a href="/admin/donors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-heart-fill me-1"></span>
+              Donors</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="/admin/collectors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-basket-fill me-1"></span>
+              Collectors</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/distributors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-asterisk me-1"></span>
+              Distributors</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/logout" class="text-light">
+              <span class="text-warning fs-5 bi bi-power me-1"></span>
+              Logout
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- Medium device sidebar -->
+      <div
+        class="col-1 d-none d-md-block d-lg-none sidebar"
+        style="width: 100px"
+      >
+        <p class="my-5">
+          <a href="/admin/index.html" class="text-light">
+            <img src="/img/logo.png" alt="logo" class="img-fluid" />
+          </a>
+        </p>
+
+        <p class="bi bi-person-fill small">Jon Doe</p>
+
+        <div class="ms-2 pt-2">
+          <p class="mb-4">
+            <a href="/admin/index.html" class="text-light" title="Dashboard">
+              <span class="text-warning fs-5 bi bi-speedometer2 me-1"></span>
+            </a>
+          </p>
+          <p class="mb-4">
+            <a href="/admin/profile.html" class="text-light" title="Profile">
+              <span class="text-warning fs-5 bi bi-person-fill me-1"></span>
+            </a>
+          </p>
+
+          <p
+            id="md-accounts-link"
+            class="text-light cursor"
+            title="Create Account"
+          >
+            <span class="text-warning fs-5 bi bi-pencil-square me-1"></span>
+            <span id="md-caret" class="bi bi-caret-down-fill small"> </span>
+          </p>
+
+          <!-- Account dropdown -->
+          <div id="md-account-dropdown" class="hidden small fw-semibold my-3">
+            <li class="mb-3">
+              <a href="/admin/collector-account.html" class="text-light small"
+                >Collector</a
+              >
+            </li>
+            <li>
+              <a href="/admin/distributor-account.html" class="text-light small"
+                >Distributor</a
+              >
+            </li>
+          </div>
+
+          <p class="mb-4">
+            <a
+              href="/admin/manage.html"
+              class="text-light"
+              title="Manage Accounts"
+            >
+              <span class="text-warning fs-5 bi bi-people me-1"></span>
+            </a>
+          </p>
+
+          <p class="mb-4">
+            <a
+              href="/admin/assign-donation.html"
+              class="text-light"
+              title="Manage Donation"
+            >
+              <span class="text-warning fs-5 bi bi-check2-all me-1"></span>
+            </a>
+          </p>
+          <p class="mb-4">
+            <a href="/admin/donors.html" class="text-light" title="Donors">
+              <span class="text-warning fs-5 bi bi-heart-fill me-1"></span>
+            </a>
+          </p>
+          <p class="mb-4">
+            <a
+              href="/admin/collectors.html"
+              class="text-light"
+              title="Collectors"
+            >
+              <span class="text-warning fs-5 bi bi-basket-fill me-1"></span>
+            </a>
+          </p>
+
+          <p class="mb-4">
+            <a
+              href="/admin/distributors.html"
+              class="text-light"
+              title="Distributors"
+            >
+              <span class="text-warning fs-5 bi bi-asterisk me-1"></span>
+            </a>
+          </p>
+          <p class="mb-4">
+            <a href="/admin/logout" class="text-light" title="Logout">
+              <span class="text-warning fs-5 bi bi-power me-1"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Small device sidebar -->
+      <div class="d-block d-md-none pt-3 border-bottom">
+        <li class="mx-2 mb-2 ps-4 mt-1 text-light float-start">
+          <a href="/admin/dashboard">
+            <img
+              src="/img/logo.png"
+              alt="logo"
+              class="img-fluid"
+              width="150px"
+            />
+          </a>
+        </li>
+        <h1 class="mx-2 mb-2 float-end">
+          <a id="sm-menu-bar" class="bi bi-list cursor"></a>
+        </h1>
+
+        <!-- overlay -->
+        <div id="sidebar-overlay" class="hidden"></div>
+
+        <!-- Small Device menus -->
+        <div
+          id="small-sidebar"
+          class="hidden sm-sidebar shadow-lg py-5 ps-3 small"
+        >
+          <button id="sidebar-close" class="close-btn float-end">
+            &times;
+          </button>
+
+          <p class="mb-5 p-2">
+            <a href="/admin/index.html" class="text-light">
+              <img src="/img/logo.png" alt="" width="180px" />
+            </a>
+          </p>
+
+          <p class="ms-2 bi bi-person-fill small">Jon Doe</p>
+
+          <p class="my-4">
+            <a href="/admin/index.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-speedometer2 me-1"></span>
+              Dashboard</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/profile.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-person-fill me-1"></span>
+              Profile</a
+            >
+          </p>
+
+          <p id="sm-accounts-link" class="text-light cursor">
+            <span class="text-warning fs-5 bi bi-pencil-square me-1"></span>
+            Create Account &nbsp;
+            <span id="sm-caret" class="bi bi-caret-down-fill small"> </span>
+          </p>
+
+          <!-- Account dropdown -->
+          <ul id="sm-account-dropdown" class="hidden">
+            <li class="mb-3">
+              <a href="/admin/collector-account.html" class="text-light small"
+                >Collector</a
+              >
+            </li>
+            <li>
+              <a href="/admin/distributor-account.html" class="text-light small"
+                >Distributor</a
+              >
+            </li>
+          </ul>
+
+          <p class="mb-4">
+            <a href="/admin/manage.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-people me-1"></span> Manage
+              Accounts</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/assign-donation.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-check2-all me-1"></span>
+              Manage Donation
+            </a>
+          </p>
+          <p class="mb-4">
+            <a href="/admin/donors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-heart-fill me-1"></span>
+              Donors</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="/admin/collectors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-basket-fill me-1"></span>
+              Collectors</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/distributors.html" class="text-light">
+              <span class="text-warning fs-5 bi bi-asterisk me-1"></span>
+              Distributors</a
+            >
+          </p>
+
+          <p class="mb-4">
+            <a href="/admin/logout" class="text-light">
+              <span class="text-warning fs-5 bi bi-power me-1"></span>
+              Logout
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Contents -->
+      <div class="col-12">
+        <div class="contents mt-5">
+          <p class="fs-5 fw-semibold border-start border-warning border-5 mb-5">
+            &nbsp; &nbsp; Create Collector
+          </p>
+
+          <!-- ------Alert Message--------- -->
+          <!-- Error Message -->
+          <div id="error-message" class="hidden">
+            <p class="alert alert-danger text-center mt-5">Invalid Inputs</p>
+          </div>
+          <!-- Success Message-->
+          <div id="success-message" class="hidden">
+            <p class="alert alert-success text-center mt-5">
+              Account Created Successfully
+            </p>
+          </div>
+
+          <!-- Create form -->
+          <form action="#" class="p-5 shadow-lg rounded bg">
+            <p class="fs-3 fw-semibold px-5">Create new Collector account</p>
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="text"
+                    name="username"
+                    id="username"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                  <label for="password">Password</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    class="form-control"
+                    placeholder="Full Name"
+                  />
+                  <label for="country">Full Name</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <select
+                    required
+                    name="state"
+                    class="form-select"
+                    id="state"
+                    aria-label="Floating label select example"
+                    disabled
+                  >
+                    <option value="Addis Ababa" selected>Addis Ababa</option>
+                  </select>
+                  <label for="state">State</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="form-control"
+                    placeholder="City"
+                  />
+                  <label for="date">City</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="text"
+                    name="wereda"
+                    id="wereda"
+                    class="form-control"
+                    placeholder="Wereda"
+                  />
+                  <label for="wereda">Wereda</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating mb-4">
+                  <input
+                    required
+                    type="number"
+                    name="kebele"
+                    id="kebele"
+                    class="form-control"
+                    placeholder="Kebele"
+                  />
+                  <label for="kebele">Kebele</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <button
+                  class="btn-donate w-100 mt-3 pb-2 mb-4"
+                  id="createCollector"
+                >
+                  Create
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/js/admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./integration/account-manager.js"></script>
+  </body>
+</html>
